@@ -17,6 +17,7 @@ namespace SnakeAndLadderGame
                 P1.RollDice();
                 P1.Display();
             }
+            Console.WriteLine("Player total rolled:" +P1.totalRoll);
         }
       
     }

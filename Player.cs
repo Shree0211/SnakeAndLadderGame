@@ -11,6 +11,7 @@ namespace SnakeAndLadderGame
         public int position = 0;
         public static Random random = new Random();
         public int roll;
+        public int totalRoll;
         public void Move(int movement)
         {
             position += movement;
@@ -23,6 +24,8 @@ namespace SnakeAndLadderGame
         public void RollDice()
         {
             roll = random.Next(1, 7);
+            totalRoll++;
+            Display();
             Console.WriteLine("Player rolled: " + roll);
             Move(roll);
             Option();
