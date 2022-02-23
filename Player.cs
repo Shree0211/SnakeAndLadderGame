@@ -14,6 +14,11 @@ namespace SnakeAndLadderGame
         public void Move(int movement)
         {
             position += movement;
+            if(position>100)
+            {
+                position -= movement;
+                Console.WriteLine("You crossed 100 so moving back to last position");
+            }
         }
         public void RollDice()
         {
