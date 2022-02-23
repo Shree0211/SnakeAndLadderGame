@@ -9,5 +9,13 @@ namespace SnakeAndLadderGame
     internal class Game
     {
         Player P1 = new Player();
+        Random random = new Random();
+        public void start()
+        {
+            P1.RollDice();
+            P1.Display();
+        }
+      
     }
+    
 }

@@ -8,6 +8,21 @@ namespace SnakeAndLadderGame
 {
     internal class Player
     {
-        int position = 0;
+       public int position = 0;
+        public static Random random = new Random();
+        public void move(int roll)
+        {
+            position += roll;
+        }
+        public void RollDice()
+        {
+            int roll = random.Next(1, 7);
+            move(roll);
+        }
+
+        public void Display()
+        {
+            Console.WriteLine("Player position: " + position);
+        }
     }
 }

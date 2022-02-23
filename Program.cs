@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using SnakeAndLadderGame;
+Console.WriteLine("SNAKE AND LADDER GAME");
+
+Game game = new Game();
+game.start();
+
