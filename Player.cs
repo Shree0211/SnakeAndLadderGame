@@ -12,6 +12,9 @@ namespace SnakeAndLadderGame
         public static Random random = new Random();
         public int roll;
         public int totalRoll;
+        /// <summary>
+        /// Moves the player
+        /// </summary>
         public void Move(int movement)
         {
             position += movement;
@@ -21,6 +24,9 @@ namespace SnakeAndLadderGame
                 Console.WriteLine("You crossed 100 so moving back to last position");
             }
         }
+        /// <summary>
+        /// Rolls the dice
+        /// </summary>
         public void RollDice()
         {
             roll = random.Next(1, 7);
@@ -30,11 +36,16 @@ namespace SnakeAndLadderGame
             Move(roll);
             Option();
         }
+        /// <summary>
+        /// Displays player position
+        /// </summary>
         public void Display()
         {
             Console.WriteLine("Player position: " + position);
         }
-
+        /// <summary>
+        /// Options for snake and ladder
+        /// </summary>
         public void Option()
         {
             int option = random.Next(0, 3);
