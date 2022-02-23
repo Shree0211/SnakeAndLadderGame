@@ -12,8 +12,11 @@ namespace SnakeAndLadderGame
         Random random = new Random();
         public void start()
         {
-            P1.RollDice();
-            P1.Display();
+            while(P1.position<100)
+            {
+                P1.RollDice();
+                P1.Display();
+            }
         }
       
     }

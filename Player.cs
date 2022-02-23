@@ -18,6 +18,7 @@ namespace SnakeAndLadderGame
         public void RollDice()
         {
             roll = random.Next(1, 7);
+            Console.WriteLine("Player rolled: " + roll);
             Move(roll);
             Option();
         }
